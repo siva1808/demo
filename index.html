@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
 <body>
     <h1>Hello World</h1>
+    <p>This is a sample paragraph.</p>
+    <script src="script.js"></script>
+    
+    <p id="dynamicText">Dynamic Text</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+
+        function changeText() {
+            const dynamicText = document.getElementById('dynamicText');
+            dynamicText.textContent = "Hello, World!";
+            dynamicText.style.color = "red";
+            dynamicText.style.fontSize = "24px";
+        }
+       
+    </script>
 </body>
 </html>
